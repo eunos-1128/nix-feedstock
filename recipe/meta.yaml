@@ -1,5 +1,5 @@
 {% set name = "nix" %}
-{% set version = "2.3.3" %}
+{% set version = "2.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://nixos.org/releases/nix/nix-{{ version }}/nix-{{ version }}.tar.xz
-  sha256: 332fffb8dfc33eab854c136ef162a88cec15b701def71fa63714d160831ba224
+  sha256: 1c626a0de0acc69830b1891ec4d3c96aabe673b2a9fd04cef84f2304d05ad00d
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   ignore_run_exports:
     - libxslt
@@ -52,7 +52,7 @@ about:
   license: LGPL-2.1-or-later
   license_family: LGPL
   license_file: COPYING
-  summary: 'The Purely Functional Package Manager'
+  summary: The Purely Functional Package Manager
   description: |
     Nix is a powerful package manager for Linux and other Unix systems
     that makes package management reliable and reproducible. It provides
