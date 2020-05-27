@@ -1,5 +1,5 @@
 {% set name = "nix" %}
-{% set version = "2.3.4" %}
+{% set version = "2.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://nixos.org/releases/nix/nix-{{ version }}/nix-{{ version }}.tar.xz
-  sha256: 1c626a0de0acc69830b1891ec4d3c96aabe673b2a9fd04cef84f2304d05ad00d
+  sha256: 25445353c27d7c2703cd74216bce6458a02068965055d111765ac4186ed678c1
 
 build:
   number: 0
