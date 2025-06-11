@@ -27,7 +27,7 @@ requirements:
     - openssl
     - brotli
     - bzip2
-    - xz
+    - liblzma-devel
     - curl
     - sqlite
     - libboost-devel
