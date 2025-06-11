@@ -37,6 +37,7 @@ requirements:
     - bison
     - flex
     - libseccomp  # [linux]
+    - zlib
   run:
     - brotli
     - libcurl
