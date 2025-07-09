@@ -31,5 +31,7 @@ function endgroup {
             echo -en 'travis_fold:end:'"${1// /}"'\r';;
         github_actions )
             echo "::endgroup::";;
+        * )
+            echo "$1";;
     esac
 } 2> /dev/null
